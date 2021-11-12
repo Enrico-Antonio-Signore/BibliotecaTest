@@ -13,9 +13,13 @@ namespace Biblioteca_Verifica
         private string _indirizzo;
         private int _apertura;
         private int _chiusura;
-        public Biblioteca(string nome, string indirizzo, string apertura)
+        public Biblioteca(string nome, string indirizzo, int apertura,int chiusura)
         {
             listalibri = new List<Libro>();
+            Nome = nome;
+            Indirizzo = indirizzo;
+            Apertura = apertura;
+            Chiusura = chiusura;
         }
         public string Nome
         {

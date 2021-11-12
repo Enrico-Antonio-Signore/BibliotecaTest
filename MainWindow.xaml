@@ -5,13 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Biblioteca_Verifica"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="460" Width="618">
     <Grid>
-        <Button x:Name="btnCrea" Content="Crea" HorizontalAlignment="Left" Margin="221,58,0,0" VerticalAlignment="Top" Width="75" Click="btnCrea_Click"/>
-        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="72,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtPagine" HorizontalAlignment="Left" Height="23" Margin="72,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Nome" HorizontalAlignment="Left" Margin="23,33,0,0" VerticalAlignment="Top"/>
-        <Label Content="Pagine" HorizontalAlignment="Left" Margin="21,73,0,0" VerticalAlignment="Top"/>
+        <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="124" Margin="299,10,0,0" VerticalAlignment="Top" Width="298"/>
+
+        <GroupBox Header="Aggiunta Libro" HorizontalAlignment="Left" Height="124" Margin="10,10,0,0" VerticalAlignment="Top" Width="284"/>
+
+        <Button x:Name="btnCrea" Content="Crea" HorizontalAlignment="Left" Margin="204,65,0,0" VerticalAlignment="Top" Width="66" Click="btnCrea_Click" Height="24"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="77,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.528,-0.087"/>
+        <TextBox x:Name="txtPagine" HorizontalAlignment="Left" Height="23" Margin="94,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" RenderTransformOrigin="0.102,0.279"/>
+        <Label Content="Nome" HorizontalAlignment="Left" Margin="29,34,0,0" VerticalAlignment="Top"/>
+        <Label Content="Pagine" HorizontalAlignment="Left" Margin="44,93,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.858,0.275"/>
+        <ListBox x:Name="lstLibri" HorizontalAlignment="Left" Height="251" Margin="10,139,0,0" VerticalAlignment="Top" Width="283"/>
+        <ComboBox x:Name="cmbLibri" HorizontalAlignment="Left" Margin="328,50,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.342,-1.82"/>
+        <Button x:Name="btnInfo" Content="Mostra Info" HorizontalAlignment="Left" Margin="353,81,0,0" VerticalAlignment="Top" Width="75" Click="btnInfo_Click"/>
+        <Label Content="Numero Libri Totale:" HorizontalAlignment="Left" Margin="215,395,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblNLibri" Content="N/A" HorizontalAlignment="Left" Margin="337,395,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtAutore" HorizontalAlignment="Left" Height="23" Margin="77,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.102,0.279"/>
+        <Label Content="Autore" HorizontalAlignment="Left" Margin="26,62,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.858,0.275"/>
+        <ComboBox x:Name="cmbLibriAutore" HorizontalAlignment="Left" Margin="462,50,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.342,-1.82"/>
+        <Button x:Name="btnInfoAutore" Content="Mostra Info" HorizontalAlignment="Left" Margin="484,81,0,0" VerticalAlignment="Top" Width="75" Click="btnInfoAutore_Click"/>
+        <ListBox x:Name="lstLibriInfo" HorizontalAlignment="Left" Height="251" Margin="299,139,0,0" VerticalAlignment="Top" Width="298"/>
 
     </Grid>
 </Window>

@@ -9,10 +9,13 @@ namespace Biblioteca_Verifica
     class Libro
     {
         private string _nome;
+        private string _autore;
         private int _pagine;
-        public Libro(string nome, int pagine)
+        private string _ore;
+        public Libro(string nome,string autore, int pagine)
         {
             Nome = nome;
+            Autore = autore;
             Pagine = pagine;
         }
         public string Nome
@@ -24,6 +27,17 @@ namespace Biblioteca_Verifica
             set
             {
                 _nome = value;
+            }
+        }
+        public string Autore
+        {
+            get
+            {
+                return _autore;
+            }
+            set
+            {
+                _autore = value;
             }
         }
         public int Pagine
@@ -39,18 +53,18 @@ namespace Biblioteca_Verifica
         }
         public string readingTime(int x)
         {
-            string ore = "";
+            _ore = "";
             if (x <= 100)
-                ore = "Lettura pari ad un ora";
+                _ore = "Lettura pari ad un ora";
             if (x > 100 && x <= 200)
-                ore = "Lettura pari a due ore";
+                _ore = "Lettura pari a due ore";
             if (x > 200)
-                ore = "Lettura superiore alle due ore";
-            return ore;
+                _ore = "Lettura superiore alle due ore";
+            return _ore;
         }
         public override string ToString()
         {
-            return $"Nome: {_nome} Pagine: {_pagine}";
+            return $"Nome: {_nome} Autore{_autore} Pagine: {_pagine}\nOre: {readingTime(_pagine)}";
         }
     }
 }
